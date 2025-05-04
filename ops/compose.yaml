@@ -1,0 +1,18 @@
+services:
+  app:
+    image: ${APP_IMAGE:-}
+    platform: linux/amd64
+    build:
+      context: ..
+      target: ${APP_TARGET}
+      dockerfile: ops/Dockerfile
+      args:
+        APP_GROUP_ID: ${APP_GROUP_ID:-65534}
+        APP_USER_ID: ${APP_USER_ID:-65534}
+    env_file:
+      - ../.env
+    ports:
+      - ${API_PORT:-10102}:3000
+      - ${DEBUG_PORT:-9230}:9229
+    volumes:
+      - ../.:/var/www

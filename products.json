@@ -1,0 +1,70 @@
+{
+  "products": [
+    {
+      "id": "pf001",
+      "imageUrl": "https://another-example.com/images/pf001.jpg",
+      "name": "Royal Canine Adult 10kg",
+      "count": 20,
+      "weight": "10kg",
+      "price_discount": 45.99,
+      "price_orig": 55.00,
+      "type": "Dry Food",
+      "animal": "Dog"
+    },
+    {
+      "id": "pf002",
+      "imageUrl": "https://another-example.com/images/pf002.jpg",
+      "name": "Whiskas Kitten 2kg",
+      "count": 15,
+      "weight": "2kg",
+      "price_discount": 12.50,
+      "price_orig": 15.00,
+      "type": "Dry Food",
+      "animal": "Cat"
+    },
+    {
+      "id": "pf003",
+      "imageUrl": "https://another-example.com/images/pf003.jpg",
+      "name": "Pedigree Puppy 15kg",
+      "count": 10,
+      "weight": "15kg",
+      "price_discount": 50.00,
+      "price_orig": 60.00,
+      "type": "Dry Food",
+      "animal": "Dog"
+    },
+    {
+      "id": "pf004",
+      "imageUrl": "https://another-example.com/images/pf004.jpg",
+      "name": "Felix As Good as it Looks 100g x 12",
+      "count": 25,
+      "weight": "1.2kg",
+      "price_discount": 8.00,
+      "price_orig": 10.00,
+      "type": "Wet Food",
+      "animal": "Cat"
+    },
+    {
+      "id": "pf005",
+      "imageUrl": "https://another-example.com/images/pf005.jpg",
+      "name": "James Wellbeloved Adult Turkey & Rice 7.5kg",
+      "count": 8,
+      "weight": "7.5kg",
+      "price_discount": 35.00,
+      "price_orig": 40.00,
+      "type": "Dry Food",
+      "animal": "Dog"
+    },
+    {
+      "id": "pf006",
+      "imageUrl": "https://another-example.com/images/pf006.jpg",
+      "name": "Iams Senior 11+ Chicken 3kg",
+      "count": 12,
+      "weight": "3kg",
+      "price_discount": 20.00,
+      "price_orig": 25.00,
+      "type": "Dry Food",
+      "animal": "Cat"
+    }
+  ]
+}
