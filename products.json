@@ -2,7 +2,7 @@
   "products": [
     {
       "id": "pf001",
-      "imageUrl": "https://another-example.com/images/pf001.jpg",
+      "image_url": "/public/goods_placeholder.svg",
       "name": "Royal Canine Adult 10kg",
       "count": 20,
       "weight": "10kg",
@@ -13,7 +13,7 @@
     },
     {
       "id": "pf002",
-      "imageUrl": "https://another-example.com/images/pf002.jpg",
+      "image_url": "/public/goods_placeholder.svg",
       "name": "Whiskas Kitten 2kg",
       "count": 15,
       "weight": "2kg",
@@ -24,7 +24,7 @@
     },
     {
       "id": "pf003",
-      "imageUrl": "https://another-example.com/images/pf003.jpg",
+      "image_url": "/public/goods_placeholder.svg",
       "name": "Pedigree Puppy 15kg",
       "count": 10,
       "weight": "15kg",
@@ -35,7 +35,7 @@
     },
     {
       "id": "pf004",
-      "imageUrl": "https://another-example.com/images/pf004.jpg",
+      "image_url": "/public/goods_placeholder.svg",
       "name": "Felix As Good as it Looks 100g x 12",
       "count": 25,
       "weight": "1.2kg",
@@ -46,7 +46,7 @@
     },
     {
       "id": "pf005",
-      "imageUrl": "https://another-example.com/images/pf005.jpg",
+      "image_url": "/public/goods_placeholder.svg",
       "name": "James Wellbeloved Adult Turkey & Rice 7.5kg",
       "count": 8,
       "weight": "7.5kg",
@@ -57,7 +57,7 @@
     },
     {
       "id": "pf006",
-      "imageUrl": "https://another-example.com/images/pf006.jpg",
+      "image_url": "/public/goods_placeholder.svg",
       "name": "Iams Senior 11+ Chicken 3kg",
       "count": 12,
       "weight": "3kg",

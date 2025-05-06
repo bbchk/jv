@@ -13,7 +13,20 @@ window.on(ROUTE_CHANGED_EVENT, (ev) => {
       // TODO: sort by real label `favorite choice` from db in the future
       let idx = 0;
 
-      for (const { name, price_orig, price_discount } of ev.detail.data) {
+      console.log(ev.detail.data);
+
+      // "id": "pf001",
+      // "imageUrl": "/public/goods_placeholder.svg",
+      // "name": "Royal Canine Adult 10kg",
+      // "count": 20,
+      // "weight": "10kg",
+      // "price_discount": 45.99,
+      // "price_orig": 55.00,
+      // "type": "Dry Food",
+      // "animal": "Dog"
+
+      for (const { name, image_url, price_orig, price_discount } of ev.detail
+        .data) {
         // TODO: sort by real label `favorite choice` from db in the future
         if (idx > 7) {
           break;
@@ -23,7 +36,7 @@ window.on(ROUTE_CHANGED_EVENT, (ev) => {
         // <img class='gallery__cardImage' src="/goods_placeholder.svg" alt="${name}"/>
         galleryContent += `
     <div class='gallery__card'>
-      <img class='gallery__cardImage' src="https://picsum.photos/500/500" alt="${name}"/>
+      <img class='gallery__cardImage' src="${image_url}" alt="${name}"/>
       <h3 class="gallery__cardName">${name}</h3>
       <div class="gallery__cardPrices">
         <del>${price_orig}<span>₴</span></del>
