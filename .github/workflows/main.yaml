@@ -1,0 +1,59 @@
+# WIP
+#
+# Work in progress. Manifest might change in the future
+
+# name: lint, test, build, deploy
+#
+# on:
+#   push:
+#     branches: [dev]
+#   pull_request:
+#     branches: [dev]
+#   workflow_dispatch:
+#
+# concurrency:
+#   group: ${{ github.workflow }}-${{ github.ref }}
+#   cancel-in-progress: true
+#
+# defaults:
+#   run:
+#     shell: bash
+#     working-directory: src
+#
+# env:
+#   NODE_VERSION: 20
+#   ENVIRONMENT: DEV
+#   USER: bbchk 
+#   REPO: jv 
+#   REF: dev
+#
+# jobs:
+#   lint:
+#     uses: ${{ env.USER }}/${{ env.REPO }}/.github/workflows/lint.yaml@${{ env.REF }}
+#     with:
+#       node-version: ${{ env.NODE_VERSION }}
+#       environment: ${{ env.ENVIRONMENT }}
+#
+#   test:
+#     uses: ${{ env.USER }}/${{ env.REPO }}/.github/workflows/test.yaml@${{ env.REF }}
+#     with:
+#       node-version: ${{ env.NODE_VERSION }}
+#       environment: ${{ env.ENVIRONMENT }}
+#     secrets:
+#       ENV_KEY: ${{ secrets.ENV_KEY }}
+#
+#   build:
+#     uses: ${{ env.USER }}/${{ env.REPO }}/.github/workflows/build.yaml@${{ env.REF }}
+#     with:
+#       node-version: ${{ env.NODE_VERSION }}
+#       environment: ${{ env.ENVIRONMENT }}
+#     secrets:
+#       ENV_KEY: ${{ secrets.ENV_KEY }}
+#
+#   deploy:
+#     uses: ${{ env.USER }}/${{ env.REPO }}/.github/workflows/build.yaml@${{ env.REF }}
+#     with:
+#       node-version: ${{ env.NODE_VERSION }}
+#       environment: ${{ env.ENVIRONMENT }}
+#     secrets:
+#       ENV_KEY: ${{ secrets.ENV_KEY }}
