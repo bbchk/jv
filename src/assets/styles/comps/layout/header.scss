@@ -5,15 +5,70 @@
   align-items: center;
   gap: 20px;
 
-  height: 70px;
+  height: 80px;
 
   overflow: clip;
 
   border-bottom: 1px solid $color-wh-platinum;
+
+  background: $color-gr-medbud;
 }
 
-/* .header__nav {} */
+.headerLogo {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
 
-/* .header__navList {} */
-/**/
-/* .header__navItem {} */
+  padding: 0 30px;
+
+  span {
+    font-family: $font-pacifico;
+    font-size: 3rem;
+    font-weight: 500;
+    color: $color-blu-dasl;
+  }
+
+  &:hover {
+    span {
+      color: $color-blu-dasl;
+    }
+  }
+
+  @media only screen and (width < 1200px) {
+    span {
+      display: none;
+    }
+  }
+
+  @media only screen and (width < 300px) {
+    img {
+      display: none;
+    }
+  }
+}
+
+.header__nav {}
+
+.header__navList {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+
+.header__navItem {
+
+  &--catalog,
+  &--cart {
+    font-family: $font-balsamiq-sans;
+    font-size: 1.2rem;
+  }
+
+  &--catalog {}
+
+  &--cart {}
+}
+
+.header__navItemIcon {
+  font-family: $font-noto-emoji;
+  color: $color-blu-dasl;
+}
