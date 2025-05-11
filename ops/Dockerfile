@@ -17,9 +17,6 @@ RUN mkdir -p "${HOME}" && \
 
 WORKDIR $HOME
 
-# HEALTHCHECK --start-period=5s --interval=30s --timeout=5s --retries=5 \
-#   CMD curl -f http://localhost:${WEBSOCKET_PORT}/probe || exit 1
-
 USER ${APP_USER_ID}:${APP_GROUP_ID}
 
 #############
